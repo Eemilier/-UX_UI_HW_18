@@ -43,16 +43,20 @@ nav{
     top: 0%;
     background-color: rgb(216, 185, 195,0.7);
     width: 100%;
-
     padding: 20px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+p{
+display: flex;
+font-weight: bold;
+text-transform: uppercase;
+font-family: 'Snowburst One', cursive;
+}
 
-
-ul{
+ul {
 list-style: none;
 display: flex;
 justify-content: center;
@@ -61,6 +65,7 @@ padding-right: 30px;
 
 }
 ul li a{
+  font-family: 'Snowburst One', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,24 +88,38 @@ ul li a:hover{
 main{
     
    font-family: 'Snowburst One', cursive;
-   background: radial-gradient(#d8b9c3, #4d4c7d); 
+   background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+   /* 指定背景图像的大小 */
+   background-size: 500%;
+   /* 执行动画：动画名 时长 线性的 无限次播放 */
+   animation: bgAnimation 15s linear infinite;
    align-items: center;
-   justify-content: space-between;
+   justify-content:first baseline;
    display: flex;
    color: white;
    font-style: italic;
 
 }
-
+@keyframes bgAnimation {
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
 .welcome{
 align-items: center;
 justify-items: center;
 display: flex;
-width: 100%;
+width: 50%;
 height: 450px;
 font-size: 50px;
 font-weight: 100;
-margin: 80px;
+margin: 50px;
 
 }
 
@@ -114,10 +133,10 @@ height: 25px;
 
 .img{
 justify-content: center;
-position: relative;
+position:relative;
 display: flex;
 height: 400px;
-margin-right: 40px;
+padding-left: 100px;
 padding-top: 100px;
 animation: loli 4s ease-in-out infinite;
 }
@@ -138,7 +157,7 @@ width: 150px;
 height: 40px;
 border-radius: 50%;
 position: absolute;
-margin-left: 68px;
+margin-left: 150px;
 filter: blur(1px);
 animation: shadow 4s ease-in-out infinite;
 }
@@ -401,4 +420,5 @@ font-size: medium;
 
 .space{
   padding-top: 5px;
+
 }
