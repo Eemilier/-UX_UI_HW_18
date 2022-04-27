@@ -146,7 +146,7 @@ animation: loli 4s ease-in-out infinite;
     transform: translateY(0);
   }
   50%{
-    transform: translateY(-80px);
+    transform: translateY(-50px);
   }
   
 }
@@ -164,6 +164,9 @@ animation: shadow 4s ease-in-out infinite;
 
 @keyframes shadow {
 0%, 100%{
+  transform: scale(0.8);
+}
+50%{
   transform: scale(0.5);
 }
 }
