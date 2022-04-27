@@ -43,17 +43,20 @@ nav{
     top: 0%;
     background-color: rgb(216, 185, 195,0.7);
     width: 100%;
-    padding: 20px ;
+    padding: 15px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #240f44;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 p{
 display: flex;
 font-weight: bold;
-text-transform: uppercase;
-font-family: 'Snowburst One', cursive;
+
+font-family: 'Courier New', Courier, monospace;
 }
 
 ul {
@@ -70,11 +73,11 @@ ul li a{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-weight: bold;
+  
     text-transform: uppercase;
     margin: 0 15px;
-    color: #363062;
-    transition: .5s;
+    color: #240f44
+    transition .5s;
 }
 
 ul li a:hover{
@@ -88,10 +91,8 @@ ul li a:hover{
 main{
     
    font-family: 'Snowburst One', cursive;
-   background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
-   /* 指定背景图像的大小 */
+   background: linear-gradient(125deg,#4b6b8a,#208f4e,#236d9e,#a7372a,#8841a7);
    background-size: 500%;
-   /* 执行动画：动画名 时长 线性的 无限次播放 */
    animation: bgAnimation 15s linear infinite;
    align-items: center;
    justify-content:first baseline;
@@ -113,13 +114,13 @@ main{
 }
 .welcome{
 align-items: center;
-justify-items: center;
 display: flex;
 width: 50%;
-height: 450px;
+height: 550px;
 font-size: 50px;
 font-weight: 100;
 margin: 50px;
+padding-left: 100px;
 
 }
 
@@ -172,164 +173,127 @@ animation: shadow 4s ease-in-out infinite;
 }
 
 
-#categoryGrid {
-    margin-top: 10px 10px;
-    background-color: #cfc1cf;
-    display: grid;
-align-items: center;
-background: size 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "lefttop righttop"
-    "leftmiddle rightmiddle"
-    "leftbottom rightbottom"
-    "leftbottom2 rightbottom2";
+.body {
+   display: flex;
+   flex-wrap: wrap;
+    background-color:#240f44;
+
   }
   
-  #lefttop:hover{
+  #pic img:hover{
     border: 5px double rgb(255, 255, 255,0.7);
 
   }
-  #rightmiddle:hover{
-    border: 5px double rgb(255, 255, 255,0.7);}
+  
+  #pic{
+    display: flex
+;
+  }
+  #pic img{
+   height:100%;
+    width: 30%;
+margin-top: 100px;
+margin-left: 20%;
+display: flex;}
 
-    #leftbottom:hover{
-        border: 5px double rgb(255, 255, 255,0.7);}
+#pic2 img{
+  height: 100%;
+   width: 30%;
+margin-left: 20%;
 
-  #rightbottom2:hover{
-        border: 5px double rgb(255, 255, 255,0.7);}
+float: left;
+}
 
-  #lefttop{
-    grid-area: lefttop;
-    align-content: center;
-    justify-content: center;
-    width: 80%;
-    height: 90%;
-margin-left: 100px;
-margin-top: 50px;
-background-image: url("../imagges/travel.jpg"); 
-border-radius: 20px;
-align-items: center;
-  
-  }
-  #righttop {
-    grid-area: righttop;
-    border-radius: 20px;
-  align-content: center;
-  text-align: center;
- margin-right: 100px;
-  font-size: 24px;
-  width: 80%;
-  height: 60%;
-padding: 50px;
-  }
-  
-  #leftmiddle {
-    grid-area: leftmiddle;
-    background-color: rgb(255, 255, 255,0.2);
-    border-radius: 20px;
-    margin-left: 100px;
-    padding: 50px;
-   margin-left: 100px;
-   margin-top: 50px;
-    font-size: 24px;
-    width: 80%;
-    height: 60%;
-    text-align: center;
-  }
+#pic3 img{
+  height: 100%;
+   width: 30%;
+margin-left: 20%;
+margin-bottom: 100px;
+float: left;
+padding-bottom: 100px;
+}
 
-  #rightmiddle{
-grid-area: rightmiddle;
-   align-items: center;
-   justify-content: center;
-   
-    width: 80%;
-    height: 90%;
-margin-top: 50px;
-background-image: url("../imagges/fruit.jpg"); 
-border-radius: 20px;
-
-  }
-  
-  #leftbottom {
-    grid-area: leftbottom;
-    width: 80%;
-    height: 90%;
-    margin-left: 100px;
-margin-top: 50px;
-background-image: url("../imagges/HEALTH.png"); 
-border-radius: 20px;
-  }
-  
-  #rightbottom{
-    grid-area: rightbottom;
-    background-color: rgb(255, 255, 255,0.2);
-    border-radius: 20px;
-    align-content: center;
-    margin-top: 50px;
-    text-align: center;
-   margin-right: 130px;
-    font-size: 24px;
-    width: 80%;
-    height: 60%;
-    padding: 50px;
-  }
-
-  #leftbottom2 {
-    grid-area: leftbottom2;
-    background-color: rgb(255, 255, 255,0.2);
-    border-radius: 20px;
-   text-align: center;
-   margin-left: 100px;
-    font-size: 24px;
-    width: 80%;
-    height: 60%;
-    padding: 50px;
-  }
-  
-  #rightbottom2 {
-    grid-area: rightbottom2;
-    background-image: url("../imagges/MOCK.PNG"); 
-    width: 80%;
-    height:90%;
-  
-    border-radius: 20px;
-    border-color: white;
-    border: 2px;
-    align-items: center;
-    align-content: center;
-  }
-  
-  
-  .categoryGridArea {
-    background-position: center;
-    background-size: cover;
-   background-color: rgb(255, 255, 255,0.2);
-    margin: 5px;
-    cursor: pointer;
-    display: grid;
-    
+  .casestudy {
+color: aliceblue;
   }
 
   
+  #righttop  {
+    display: flex;
+    float: left;
+    margin-right:  20%;
+      margin-top: 100px;
+      text-align: center;
+      font-size: 20px;
+      width: 30%;
+    padding: 130px 30px 130px 30px ;
+    color: #090931;
+    background-color: rgba(238, 223, 241, 0.432);
+      }
+
+      #leftmiddle  {
+        display: flex;
+        float: left;
+        margin-right: 20%;
+          text-align: center;
+          font-size: 24px;
+          width: 30%;
+          height: 100%;
+        padding: 130px 30px 130px 30px ;
+        color: #d9c6e0;
+        background-color: rgb(255, 255, 255,0.2);
+          }
+  
+          #rightbottom  {
+            display: flex;
+            float: left;
+            height: 100%;
+            margin-right: 20%;
+              text-align: center;
+              font-size: 24px;
+              width: 30%;
+            padding: 130px 30px 130px 30px ;
+            color: #090931;
+    background-color: rgba(238, 223, 241, 0.432);
+              }
+
+
+          #leftbottom2 {
+            display: flex;
+            float: left;
+            height: 82%;
+            margin-right: 20%;
+              text-align: center;
+              font-size: 24px;
+              width: 30%;
+            padding: 130px 30px 130px 30px ;
+            color: #d9c6e0;
+            background-color: rgb(255, 255, 255,0.2);
+              }
+
 footer{
- background-color: #4d4c7d ; 
+  background-color: #240f44;
 color: #d8b9c3;
 font-size: large;
     font-family: 'Courier New', Courier, monospace;
     padding: 50px;  height: 200px;
  
 }
-  
-.CONTAINER{
 
-justify-items: center;
+
+.CONTAINER{
+justify-content: space-evenly;
 }
 
 .footerleft{
+  padding-left: 50px;
     float: left;
     margin-top: 0;
+}
+.footerright{
+  float: right;
+  margin-top: 0;
+  padding-right: 300px;
 }
 
 
@@ -343,6 +307,7 @@ justify-items: center;
     text-transform: uppercase;
     margin: 0 px;
     transition: .5s;
+    width: 100px;
     
 }
 
@@ -369,16 +334,17 @@ align-items: right;
   display: flex;
 align-items: center;
 width: 100%;
-height: 700px;  
+height: 300px;  
 }
 
 #contact {
-color: #4d4c7d;
-  background-color: #cfc1cf;
+color: #efeff8;
+  background-color: #2a1147;
   display: flex;
-padding-top: 200px;
+padding-bottom: 80px;
+padding-top: 80px;
 width: 100%;
-height: 700px;  
+ 
 justify-content: center;
 }
 
@@ -391,32 +357,33 @@ border: 1px solid black;
 .container2{
   display: flex;
   width: 100%;
-  height: 700px;
+  height: 200px;
   justify-content: center;
-padding: 300px;
+
 font-size: medium;
 }
 .infoleft{
+  display: left;
  padding: 0%;
 }
 
 .inforight{
   display: flex;
-  margin-bottom: 20px;
+ 
  
 }
 
 @media only screen and (max-width: 600px) {
   #about {
     background-color: #363062;
-    color: #d8b9c3;
+    color: #240f44;
     
   }
 
   .container2{
     display: flex;
   width: 100%;
-  height: 1000px;
+  height: 100px;
 font-size: medium;
   }
 }
@@ -425,3 +392,43 @@ font-size: medium;
   padding-top: 5px;
 
 }
+
+.box {
+width: 100%;
+height: 50px;
+background: linear-gradient(125deg,#4b6b8a,#208f4e,#236d9e,#a7372a,#8841a7);
+background-size: 500%;
+animation: bgAnimation 15s linear infinite;
+}
+@keyframes bgAnimation {
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
+.text{
+  color: white;
+width: auto;
+line-height: 50px;
+white-space: nowrap;
+animation: textscroll 20s linear infinite;
+}
+
+@keyframes textscroll {
+  
+  0% {
+    transform: translatex(100%);
+  }
+  100% {
+    transform: translatex(-100%);
+  }
+
+
+};
+
+
